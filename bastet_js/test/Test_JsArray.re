@@ -1,8 +1,6 @@
 open BsMocha.Mocha;
 open BsJsverify.Verify.Arbitrary;
 
-Bisect.Runtime.write_coverage_data_on_exit();
-
 module ArbitraryArray:
   Test.ARBITRARY_A with
     type t('a) = array('a) and type arbitrary('a) = arbitrary('a) = {
